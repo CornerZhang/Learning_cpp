@@ -1,13 +1,17 @@
 #include <iostream>
+#include "AutomaticDoor.h"
 
 using namespace std;
 
-struct SmallObject {
-	int x, y;
-	bool enable;
-};
-
 int main(int argc, char* argv[]) {
 	cout << "the Main!" << endl;
+
+	AutomaticDoor automaticDoor;
+	AutomaticDoor::State doorsState = automaticDoor.GetState();
+
+	if (doorsState == AutomaticDoor::State::closed) {
+		//...
+	}
+
 	return 0;
 }
