@@ -5,7 +5,7 @@ class Lamp;
 class Switch {
 private:
 	Lamp & lamp;
-	bool state{ false };
+	bool state { false };
 
 public:
 	Switch(Lamp& lamp);
