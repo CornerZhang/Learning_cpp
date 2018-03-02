@@ -7,9 +7,7 @@ int main(int argc, char* argv[]) {
 	cout << "the Main!" << endl;
 
 	AutomaticDoor automaticDoor;
-	AutomaticDoor::State doorsState = automaticDoor.GetState();
-
-	if (doorsState == AutomaticDoor::State::closed) {
+	if (automaticDoor.IsClosed()) {
 		//...
 	}
 

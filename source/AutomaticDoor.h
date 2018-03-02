@@ -1,7 +1,7 @@
 #pragma once
 
 class AutomaticDoor {
-public:
+private:
 	enum class State {
 		closed = 1,
 		opening,
@@ -9,9 +9,11 @@ public:
 		closing
 	};
 
-private:
 	State state;
 
 public:
-	State GetState() const;
+
+	bool IsOpen() const;
+	bool IsClosed() const;
+	bool IsClosing() const;
 };
